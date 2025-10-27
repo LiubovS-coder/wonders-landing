@@ -162,6 +162,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .statistics-element {
@@ -169,14 +171,23 @@ body {
     height: 6.5625rem;
     width: 10.4375rem;
     text-align: center;
-    h1 {
+    h2 {
         font-size: 3.125rem;
         font-weight: 700;
     }
-    h2 {
+    h3 {
         font-size: 1.25rem;
         font-weight: 500;
     }
+}
+
+.images-section {
+
+}
+
+.images-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 1200px) {
@@ -205,7 +216,7 @@ body {
         display: flex;
     }
     .burger-menu nav {
-        gap: 96;
+        gap: 96px;
     }
     .burger-menu nav a {
         font-size: 3rem;
@@ -217,7 +228,8 @@ body {
         justify-content: center;
         align-items: flex-start;
         align-content: center;
-        padding: 0px;
+        padding-top: 64px;
+        padding-bottom: 64px;
         gap: 40px 128px;
 
         width: 100%;
@@ -227,6 +239,33 @@ body {
         flex: none;
         order: 0;
         flex-grow: 0;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .container {
+        padding-inline: 20px;
+    }
+    .bg-blue-train {
+        /*height: 380px;*/
+        width: 100%;
+    }
+    .statistics-container {
+        gap: 30px 43px;
+        /*padding: 30.5px 23px;*/
+    }
+    .statistics-element {
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        height: 84px;
+        width: 137px;
+        h2 {
+            font-size: 2.5rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -241,4 +280,36 @@ body {
     .burger-menu nav a {
         font-size: 1.25rem;
     }
+    .statistics-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 30.5px;
+        padding-bottom: 30.5px;
+        gap: 30px 10px;
+        margin: 0 auto;
+        /*width: 360px;*/
+        /*height: 259px;*/
+
+        width: 100%;
+        /*height: 100%;*/
+    }
+    .statistics-element {
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        height: 84px;
+        width: 137px;
+        h2 {
+            font-size: 2.5rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+    }
 }
+
+
