@@ -11,7 +11,7 @@ burgerIcon.addEventListener('click', () => {
     const isMenuHidden = burgerMenu.classList.contains('hidden')
 
     if (!isMenuHidden) {
-        burgerLine2.style.opacity = 0
+        burgerLine2.style.opacity = '0'
         burgerLine1.style.transform = 'rotate(45deg) translate(10px, 3px)'
         burgerLine3.style.transform = 'rotate(-45deg) translate(10px, -3px)'
     }
