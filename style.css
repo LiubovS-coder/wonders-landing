@@ -3,6 +3,7 @@
 :root {
     --primary-text-color: #202020;
     --secondary-text-color: #90A3BF;
+    --tertiary-text-color: #FFFFFF;
     --primary-bg: #0578FF;
     --secondary-bg: #FFC501;
 }
@@ -16,6 +17,7 @@
 
 body {
     background-color: #F5F5F5;
+    color: var(--primary-text-color);
 }
 
 .container {
@@ -50,7 +52,6 @@ body {
 
 .header-logo-name {
     font-size: 2.125rem;
-    color: var(--primary-text-color);
 }
 
 .header-nav {
@@ -153,12 +154,10 @@ body {
 }
 .tickets-and-name-container {
     h1 {
-        h1 {
-            font-size: 4rem;
-            font-weight: 700;
-            padding-top: 128px;
-            padding-bottom: 24px;
-        }
+        font-size: 4rem;
+        font-weight: 700;
+        padding-top: 128px;
+        padding-bottom: 24px;
     }
 }
 
@@ -445,6 +444,7 @@ body {
 
 .apps-and-name-container {
     margin: 0 auto;
+    padding-inline: 0;
     /*width: 863px;*/
     /*height: 462px;*/
     h1 {
@@ -479,9 +479,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .app-container {
-        height: 509px;
-    }
+    /*.app-container {*/
+    /*    height: 509px;*/
+    /*}*/
 
     .apps-and-name-container h1 {
         font-size: 2.5rem;
@@ -506,21 +506,12 @@ body {
 }
 
 @media screen and (max-width: 494px) {
-    .app-container {
-        height: 400px;
-    }
-
     .apps-and-name-container h1 {
             font-size: 2rem;
             padding-bottom: 30px;
     }
 
     .app-icons-container {
-        /*display: flex;*/
-        /*!*flex-direction: column;*!*/
-        /*justify-content: space-between;*/
-        /*align-items: center;*/
-        /*gap: 30px;*/
 
         .app1 {
             width: 168px;
@@ -536,8 +527,6 @@ body {
             width: 148px;
             height: 50px;
         }
-        /*height: 210px;*/
-        /*width: 189px;*/
     }
 
     .app-icons-row1 {
@@ -553,6 +542,215 @@ body {
     .app-icons-row2 {
         flex-direction: column;
         gap: 30px;
+    }
+}
+
+/*SECTION 5 - FAQs*/
+.faqs-container {
+    padding-inline: 0;
+    padding: 128px 113px;
+    padding-bottom: 236px;
+    /*max-width: 1086px;*/
+    /*margin: 128px 177px;*/
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        /*padding-top: 128px;*/
+        padding-bottom: 40px;
+    }
+    summary {
+        font-size: 1.125rem;
+        font-weight: 500;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        color: var(--primary-text-color);
+        transition: color 0.2s cubic-bezier(0, 0, 0.2, 1);
+    }
+    summary:hover {
+        cursor: pointer;
+        color: var(--primary-bg);
+    }
+    summary::marker {
+        content: '';
+    }
+    summary::after {
+        content: '+';
+        position: relative;
+        float: right;
+        right: 1rem;
+    }
+    details[open] > summary::after {
+        content: '+';
+        transform: rotate(45deg);
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faqs-container {
+        padding: 128px 0;
+        padding-bottom: 236px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .faqs-container {
+        padding: 64px 0;
+        padding-bottom: 148px;
+        h1 {
+            padding-bottom: 32px;
+        }
+    }
+}
+
+/*FOOTER - CONTACTS*/
+.no-padding .container {
+    padding-inline: 0;
+}
+.contacts {
+    position: relative;
+}
+.contacts-container {
+    background-color: #F5F5F5;
+    width: 640px;
+    height: 397px;
+    padding: 51px 30px 60px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -31%);
+    text-align: center;
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        padding-bottom: 21px;
+    }
+    .phone-number,
+    .email {
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
+    .address {
+        font-size: 1.125rem;
+        font-weight: 400;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contacts-container {
+        width: 464px;
+        height: 397px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contacts-container {
+        width: 320px;
+        height: 341px;
+        h1 {
+            font-size: 2.25rem;
+        }
+        .phone-number,
+        .email {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+/*FOOTER*/
+.footer-container {
+    background-color: var(--primary-bg);
+    padding-top: 468px;
+}
+
+.footer-nav-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 96px;
+}
+
+.footer-logo-image-and-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer-logo-image {
+    width: 73px;
+}
+
+.footer-logo-name {
+    font-size: 2.125rem;
+    color: var(--tertiary-text-color);
+    font-weight: 400;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    color: var(--tertiary-text-color);
+    ul {
+        font-size: 1.25rem;
+        font-weight: 600;
+        width: 192px;
+        height: 244px;
+        margin-bottom: 0;
+        li {
+            margin-bottom: 24px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        li:first-child {
+            margin-top: 32px;
+        }
+        li:last-child {
+            margin-bottom: 0;
+        }
+        li::marker {
+            content: '';
+        }
+    }
+    a {
+        color: var(--tertiary-text-color);
+        transition: color 0.2s cubic-bezier(0, 0, 0.2, 1);
+    }
+    a:hover {
+        color: var(--primary-bg);
+    }
+}
+
+.copyright {
+    display: block;
+    font-size: 1rem;
+    color: var(--tertiary-text-color);
+    font-weight: 600;
+    padding-top: 40px;
+    padding-bottom: 76px;
+}
+
+@media screen and (max-width: 945px) {
+    .footer-nav-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-nav {
+        flex-wrap: wrap;
+    }
+    ul {
+        width: 140px;
+        height: 188px;
     }
 }
 
