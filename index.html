@@ -21,10 +21,10 @@
                     <span class="header-logo-name">Wonders</span>
                 </div>
                 <nav id="header-nav" class="header-nav">
-                    <a href="mobileAppSection">Mobile App</a>
-                    <a href="faqsSection">FAQs</a>
-                    <a href="contactSection">Contact</a>
-                    <a class="semi-bold-nav-link" href="signUpSection">Sign Up</a>
+                    <a href="#mobileAppSection">Mobile App</a>
+                    <a href="#faqsSection">FAQs</a>
+                    <a href="#contactSection">Contact</a>
+                    <a class="semi-bold-nav-link" href="#signUpSection">Sign Up</a>
                 </nav>
                 <div id="burger-icon" class="burger-icon">
                     <div id="burger-line1" class="line1"></div>
@@ -48,7 +48,7 @@
                     <div class="hero-container">
                         <div class="hero-frame">
                             <h1>Skip The Climbing, Catch The Bus</h1>
-                            <p>We sell tickets to the best seats in the house – houses on wheels, that is! Get ready for jaw-dropping views without breaking a sweat.</p>
+                            <p>We sell tickets to the best seats in the house – houses on wheels, that is! <br> Get ready for jaw-dropping views without breaking a sweat.</p>
                             <div class="trip-options">
                                 <label><input type="radio" id="roundTrip" name="trip" value="round"> Round trip</label>
                                 <label><input type="radio" id="oneWay" name="trip" value="oneway"> One way</label>
@@ -62,29 +62,31 @@
                                     <button class="passenger-button" type="button" id="plus">+</button>
                                 </div>
                             </div>
-                            <div class="departure-input-container">-->
-                                <label>Departure</label>
-                                <input id="departureInput" type="text" name="departure" placeholder="Your City/Station">
-                                <ul id="departureList" class="autocomplete-dropdown hidden"></ul>
+                            <div class="departure-arrival-containers">
+                                <div class="departure-input-container">
+                                    <label>Departure</label>
+                                    <input id="departureInput" type="text" name="departure" placeholder="Your City/Station">
+                                    <ul id="departureList" class="autocomplete-dropdown hidden"></ul>
+                                </div>
+                                <div class="arrival-input-container">
+                                    <label>Arrival</label>
+                                    <input id="arrivalInput" type="text" name="arrival" placeholder="Where to?">
+                                    <ul id="arrivalList" class="autocomplete-dropdown hidden"></ul>
+                                </div>
+                                <div class="depart">
+                                    <label>Pick your lucky day</label>
+                                    <input id="departInput" type="date" name="depart" placeholder="Depart">
+                                </div>
+                                <div class="return">
+                                    <br>
+                                    <input id="returnInput" type="date" name="return" placeholder="Return">
+                                </div>
                             </div>
-                            <div class="arrival-input-container">-->
-                                <label>Arrival</label>
-                                <input id="arrivalInput" type="text" name="arrival" placeholder="Where to?">
-                                <ul id="arrivalList" class="autocomplete-dropdown hidden"></ul>
-                            </div>
-                            <div class="depart">
-                                <label>Pick your lucky day</label>
-                                <input id="departInput" type="date" name="depart" placeholder="Depart">
-                            </div>
-                            <div class="return">
-                                <br>
-                                <input id="returnInput" type="date" name="return" placeholder="Return">
-                            </div>
+                            <button id="findRideButton">Find My Alpine Ride</button>
                         </div>
-                        <button id="findRideButton">Find My Alpine Ride</button>
-                    </div>
-                    <div class="hero-image">
-                        <img src="./assets/images/hero.png" alt="Image">
+                        <div class="hero-image">
+                            <img src="./assets/images/hero.png" alt="Image">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -114,16 +116,20 @@
                 <div class="container images-container">
                     <h1>Glimpses of Glory</h1>
                     <div class="grid-container">
-                        <img class="img img1" src="./assets/images/img1.png" alt="img1">
-                        <img class="img img2" src="./assets/images/img2.png" alt="img2">
-                        <img class="img img3" src="./assets/images/img3.png" alt="img3">
-                        <img class="img img4" src="./assets/images/img4.png" alt="img4">
-                        <img class="img img5" src="./assets/images/img5.png" alt="img5">
+                        <div class="img-left">
+                            <img class="img img1" src="./assets/images/img1.png" alt="img1">
+                            <img class="img img2" src="./assets/images/img2.png" alt="img2">
+                        </div>
+                        <div class="img-right">
+                            <img class="img img3" src="./assets/images/img3.png" alt="img3">
+                            <img class="img img4" src="./assets/images/img4.png" alt="img4">
+                            <img class="img img5" src="./assets/images/img5.png" alt="img5">
+                        </div>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="container app-container">
+                <div class="container app-container" id="mobileAppSection">
                     <div class="apps-and-name-container">
                         <h1>Free downloads app now!</h1>
                         <div class="app-icons-container">
@@ -145,7 +151,7 @@
                 </div>
             </section>
             <section>
-                <div class="container">
+                <div class="container" id="faqsSection">
                     <div class="faqs-container">
                         <h1>FAQs.</h1>
                         <details>
@@ -191,7 +197,7 @@
             <section class="no-padding">
                 <div class="container">
                     <div class="contacts">
-                        <div class="contacts-container">
+                        <div class="contacts-container" id="contactSection">
                             <h1>Contact us</h1>
                             <p class="phone-number">+41 98765 43210</p>
                             <p class="email">hello@peakpasses.eu</p>
@@ -237,7 +243,6 @@
                             </ul>
                         </nav>
                     </div>
-
                     <small class="copyright">English: © 2025 Peak Passages. <br> All Rights Reserved (Especially the Window Seats).
                     </small>
                 </div>
