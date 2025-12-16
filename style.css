@@ -394,7 +394,7 @@ body {
 }
 
 /*SECTION 2 - statistics*/
-.bg-blue-train {
+.statistics-section {
     background-color: var(--primary-bg);
 }
 
@@ -539,8 +539,10 @@ body {
 }
 
 /*SECTION 3 - IMAGES*/
-.images-container {
+.images-section {
     background: linear-gradient(180deg, #DDECFF 0%,  #F5F5F5 100%);
+}
+.images-container {
     max-width: 1440px;
     padding-bottom: 128px;
     h1 {
@@ -621,8 +623,10 @@ body {
 }
 
 /*SECTION 4 - APPS*/
-.app-container {
+.app-section {
     background-color: var(--secondary-bg);
+}
+.app-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -840,8 +844,10 @@ body {
 }
 
 /*FOOTER*/
-.footer-container {
+.footer-section {
     background-color: var(--primary-bg);
+}
+.footer-container {
     padding-top: 468px;
 }
 
