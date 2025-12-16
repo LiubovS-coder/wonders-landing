@@ -647,6 +647,7 @@ body {
 }
 
 .app-icons-container {
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     a {
@@ -655,16 +656,6 @@ body {
     .app {
         display: block;
     }
-}
-
-.app-icons-row1 {
-    max-height: 65px;
-}
-
-.app-icons-row2 {
-    display: flex;
-    justify-content: space-between;
-    width: calc(100% - 39%);
 }
 
 @media screen and (max-width: 768px) {
@@ -728,12 +719,9 @@ body {
     padding-inline: 0;
     padding: 128px 113px;
     padding-bottom: 236px;
-    /*max-width: 1086px;*/
-    /*margin: 128px 177px;*/
     h1 {
         font-size: 4rem;
         font-weight: 700;
-        /*padding-top: 128px;*/
         padding-bottom: 40px;
     }
     summary {
