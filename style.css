@@ -636,8 +636,6 @@ body {
 .apps-and-name-container {
     margin: 0 auto;
     padding-inline: 0;
-    /*width: 863px;*/
-    /*height: 462px;*/
     h1 {
         font-size: 3.875rem;
         font-weight: 700;
@@ -652,9 +650,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     a {
         display: inline-block;
-    }
-    .app {
-        display: block;
     }
 }
 
@@ -686,20 +681,20 @@ body {
 
     .app-icons-container {
         grid-template-columns: 1fr;
-        .app1 {
-            width: 168px;
-            height: 50px;
-        }
+        /*.app1 {*/
+        /*    width: 168px;*/
+        /*    height: 50px;*/
+        /*}*/
 
-        .app2 {
-            width: 165px;
-            height: 50px;
-        }
+        /*.app2 {*/
+        /*    width: 165px;*/
+        /*    height: 50px;*/
+        /*}*/
 
-        .app3 {
-            width: 148px;
-            height: 50px;
-        }
+        /*.app3 {*/
+        /*    width: 148px;*/
+        /*    height: 50px;*/
+        /*}*/
     }
 
     .app-icons-container a:first-child {
@@ -707,12 +702,12 @@ body {
     }
 }
 
-@media screen and (max-width: 369px){
-    .app-icons-row2 {
-        flex-direction: column;
-        gap: 30px;
-    }
-}
+/*@media screen and (max-width: 369px){*/
+/*    .app-icons-row2 {*/
+/*        flex-direction: column;*/
+/*        gap: 30px;*/
+/*    }*/
+/*}*/
 
 /*SECTION 5 - FAQs*/
 .faqs-container {
